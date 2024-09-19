@@ -1,0 +1,22 @@
+anotações aula 19/09/24 - Lógica e Programação
+				Israel
+
+
+
+Site - pexels  --> site de imagem e áudio gratuito
+
+style dentro do head  --> as antigas tags agr se chamam de seletor
+
+
+
+extensões google:
+
+colorzilla
+Fonts Ninja
+
+site: 
+adobecolor
+
+
+criar um arquivo .css
+
