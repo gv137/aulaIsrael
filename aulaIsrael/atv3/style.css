@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+/*
+Tudo que for id, no css é igual a #
+Tudo que for class, no css é igual a .
+
+# = id
+. = class
+: = pseudo-class
+:: = pseudo-elemento
+> = children 
+*/
+
+body{
+    background-color: rgb(179, 150, 150);
+    font-family: cursive;
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: none; /* sublinhado | none tira o sublinhado do link*/
+
+    /*Pesos Literais
+    lighter => mais leve
+    normal => normar
+    bold => pesado
+    bolder => mais pesado
+    
+    weigth => peso
+    width => largura
+    height => altura
+
+    font-size => px e em 
+    
+    px - trabalha com números maiores
+    em - trabalha com números menores
+
+    */
+
+}
+
+h1{
+    text-align: center;
+    border-radius: 10px;
+
+    box-shadow: 5px 5px 5px black;
+    /* direita | baixo | esmaecer */   
+
+    margin: 5px;  
+    padding: 5px;   
+}
+
+a{
+    color: chartreuse;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover{
+    color: rgb(91, 0, 119);
+
+    /* muda o texto ao passar o mouse por cima*/
+}
+
+a:active{
+    color: yellow;
+
+    /*muda o texto ao clicar*/
+}
+
+a::after{
+    content: '[← link]';
+    font-weight: 800;
+    color: blue;
+    /*coloca informação depois do texto*/
+}
+
+a::before{
+    content: '[link →]';
+    font-weight: 800;
+    color: blue;
+    /*coloca informação antes do texto*/
+}
+
+h2{
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 12px black;
+    margin: 5px;  
+    padding: 5px;
+}
+
+p{
+    margin: 5px;  
+    box-shadow: 5px 5px 12px rgb(199, 126, 126);
+    text-shadow: 1px 1px 1px black;
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(247, 11, 11);
+}
+
+#f {
+    background-image: linear-gradient(to left, rgb(73, 73, 255), white, gray);
+    text-align: left;
+}
+
+.cor{
+    background-color: blueviolet
+}
+
+.sub{
+    background-color: azure;
+}
+
+.p2{
+    text-justify:inter-word;
+    text-shadow: 0px 0px 0px black;
+    color: blue;
+}

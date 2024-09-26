@@ -1,0 +1,17 @@
+aula Israel
+
+para selecionar no css o elemento de forma diferente dos iguais, colocar um atributo "class" e nomear do jeito que preferir.
+
+no css é necessário colocar o . e em seguida o nome que foi dado.
+
+
+Estrutura padrão para construção do site:
+
+3 módulos dentro do body 
+
+** header - cabeçalho (normalmente na parte de navegação)
+-- colocar links dentro da tag <nav>
+
+** main - conteúdo principal
+
+** footer - Rodapé
