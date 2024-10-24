@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 7</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!--  Calcular e apresentar o valor do volume de uma lata de óleo, utilizando a fórmula: VOLUME <-- 3.14159 * RAIO2 * ALTURA.-->
+
+<script>
+    var Altura;
+    var Raio;
+    var resultado;
+
+
+    Altura = Number.parseInt(prompt("Digite a altura da lata de óleo"));
+    Raio = Number.parseInt(prompt("Digite o Raio da lata de óleo"))
+
+    resultado = 3.14159 * (Raio**2) * Altura;
+    
+
+    alert(`O volume da lata de óleo é igual a ${resultado} ml`);
+</script>
+
+</body>
+
+</html>

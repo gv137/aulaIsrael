@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 3</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Faça um algoritmo que leia a idade de uma pessoa expressa em ano, mês
+    e dia e mostre-as em dias. -->
+
+<script>
+    var anoNascimento;
+    var diaNascimento;
+    var mesNascimento;
+
+    var ano;
+    var dia;
+    var mes;
+
+    var difDias;
+    var difMes;
+    var difAno;
+
+    var totalDias;
+
+
+    diaNascimento = Number.parseInt(prompt("Digite o dia de nascimento"));
+    mesNascimento = Number.parseInt(prompt("Digite o mês de nascimento"));
+    anoNascimento = Number.parseInt(prompt("Digite o ano de nascimento"));
+
+    dia = Number.parseInt(prompt("Digite o dia atual"));
+    mes = Number.parseInt(prompt("Digite o mês atual"));
+    ano = Number.parseInt(prompt("Digite o ano atual"));
+
+    difDias = dia - diaNascimento;
+    difMes = mes - mesNascimento;
+    difAno = ano - anoNascimento;
+
+    totalDias = difDias + (difMes*31) + (difAno*365)
+
+    alert(`Você viveu ${totalDias} dias até hoje `);
+</script>
+
+</body>
+
+</html>
