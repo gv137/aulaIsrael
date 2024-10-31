@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Churrascaria</title>
 </head>
@@ -11,36 +10,107 @@
 <body >
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #5f5f5f;">
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(Página atual)</span></a>
-                <a class="nav-item nav-link" href="#">Menu</a>
-                <a class="nav-item nav-link" href="#">Reservas</a>
-                <a class="nav-item nav-link" href="#">Contato</a>
-              </div>
-            </div>
-          </nav>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#reservas">Reservas</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <br>
-    <h1>Churrascaria do Brasil</h1>
-    <br> <br> <br> <br>
+    <main>
 
+      <section class="section-home">
+        <h1>Bem-vindo a Churrascaria Brasil!</h1>
+        <p>Desfrtute do melhor churrasco da cidade!</p>
+        <button>Ver Menu</button>
+      </section>
 
+      <section class="section-menu">
+        <h2 class="menu"><strong>Menu</strong></h2>
+        <ul>
+          <li>
+            <img src="img/picanha.jpg" alt="Picanha">
+            <h3>Picanha</h3>
+            <p>R$ 40,00</p>
+          </li>
 
+          <li>
+            <img src="img/coracao.jpg" alt="Coração">
+            <h3>Coração</h3>
+            <p>R$ 35,00</p>
+          </li>
 
+          <li>
+            <img src="img/fraldinha.jpg" alt="Fraldinha">
+            <h3>Fraldinha</h3>
+            <p>R$ 30,00</p>
+          </li>
 
+          <li>
+            <img src="img/Cordeiro.jpg" alt="Cordeiro">
+            <h3>Cordeiro</h3>
+            <p>R$ 68,00</p>
+          </li>
+        </ul>
+      </section>
 
+      <section id="reservas">
 
+        <h2>Reservas</h2>
+
+        <form>
+          <div class="form-container">
+            <div class="form-group">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome"><br><br>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email"><br><br>
+            </div>
+
+            <div class="form-group">
+              <label for="telefone">Telefone:</label>
+              <input type="tel" id="telefone" name="telefone"><br><br>
+            </div>
+
+            <div class="form-group">
+              <label for="data">Data:</label>
+              <input type="date" id="data" name="data"><br><br>
+            </div>
+
+            <div class="form-group">
+              <label for="hora">Hora:</label>
+              <input type="time" id="hora" name="hora"><br><br>
+            </div>
+
+            <div class="form-group">
+              <input type="submit" value="Reservar"><br><br>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <section id="contato">
+
+        <h2>Contato</h2>
+        <p>Endereço: Rua Churrascaria, 123 - São Paulo, SP</p> 
+        <p>Telefone: (11) 9 1234-5678</p> 
+        <p>Email: contato@churrascariabrasil.com</p> 
+
+      </section>
+    </main>
 
     <footer>
-        <h5>Contatos</h4>
-        <p>Endereço:</p> 
-        <p>Telefone:</p> 
-        <p>Email:</p> 
-        <nav><p id="nav">@ 2023 Churrascaria do Brasil</p></nav>
+      <p> &copy; 2024 Churrascaria Brasil</p>
     </footer>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
